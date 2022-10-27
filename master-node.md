@@ -69,6 +69,10 @@ cd; source .bashrc; cd -
 ## 5. Konfigurasi Master Node
 
 ```
+cd
+```
+
+```
 cd inery-node/inery.setup
 ```
 ```
@@ -93,6 +97,10 @@ Kemudian ganti account name, publickey, privatekey, ip (sesuai kan dengan yang a
 Jika sudah langsung Simpan (ctrl+x), Ketik "Y" dan (enter)
 
 ## 6. Running Node
+
+```
+cd
+```
 
 ```
 cd inery-node/inery.setup
