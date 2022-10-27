@@ -81,20 +81,21 @@ cd tools
 ```
 nano config.json
 ```
-Cari kata kata ini
+**Cari kata kata ini**
 
-"MASTER_ACCOUNT":
+**"MASTER_ACCOUNT":
 {
     "NAME": "AccountName",
     "PUBLIC_KEY": "PublicKey",
     "PRIVATE_KEY": "PrivateKey",
     "PEER_ADDRESS": "IP:9010",
     "HTTP_ADDRESS": "0.0.0.0:8888",
-    "HOST_ADDRESS": "0.0.0.0:9010"
+    "HOST_ADDRESS": "0.0.0.0:9010"**
 
 Kemudian ganti account name, publickey, privatekey, ip (sesuai kan dengan yang ada di web testnetnya)
+untuk mengedit kalian bisa mengarahkan keyboard panah kebawah
 
-Jika sudah langsung Simpan (ctrl+x), Ketik "Y" dan (enter)
+Jika sudah langsung Simpan (CTRL+X), Ketik "Y" dan (enter)
 
 ## 6. Running Node
 
@@ -113,108 +114,56 @@ screen -S inery
 ```
 **Ketik CTRL + A + D** Untuk jalan di Background dan Untuk Kembali lagi Ke Screen Gunakan Perintah `screen -rd inery`
 
-<p align="center">
-  <img height="auto" height="auto" src="https://user-images.githubusercontent.com/38981255/184290965-fd0f6127-d351-4f55-9102-18aa1bbb38c2.PNG">
-</p>
+### Note : Untuk melanjutkan perintah dibawah ini pastikan node kalian sinkron atau nunggu 1 hari setelah running node
 
-### Jika Menunjukan Seperti di Atas, Anda Harus Mengganti Peer di, Gunakan Perintah (Lakukan di TAB Baru)
-```
-cd inery-node/inery.setup/master.node/
-nano genesis_start.sh
-```
-
-Save CTRL X lalu Y dan Enter
-## 7. Add Peer baru
-<p align="center">
-  <img height="auto" height="auto" src="https://user-images.githubusercontent.com/38981255/184370626-5b3dc227-3800-4140-a9c0-ce5b0b13e1e1.PNG">
-</p>
-
-**Isi Seperti Pada Contoh Gambar**
-
-- 62.210.245.223
-- 192.99.62.6
-- 15.235.133.9
-
-## 8. Masukan Peer
-```
---p2p-peer-address 167.235.3.147:9010 \
---p2p-peer-address 135.181.133.169:9010 \
---p2p-peer-address 15.235.133.9:9010 \
---p2p-peer-address 38.242.229.50:9010 \
---p2p-peer-address sys.blockchain-servers.world:9010 \
---p2p-peer-address bis.blockchain-servers.world:9010 \
---p2p-peer-address 167.235.71.28:9010 \
---p2p-peer-address 62.210.245.223:9010 \
---p2p-peer-address 192.99.62.6:9010 \
---p2p-peer-address 15.235.133.9:9010 \
---p2p-peer-address 5.161.96.50:9010 \
---p2p-peer-address 15.235.133.9:9010 \
-```
-
-## 9. Restart Node
-```
-./stop.sh
-```
-
-Tunggu Sekitar 5-10 Detik
-
-```
-./genesis_start.sh
-```
-
-<p align="center">
-  <img height="auto" height="auto" src="https://user-images.githubusercontent.com/38981255/184370620-b73f5269-50ad-47aa-9b03-d55d8718c614.PNG">
-</p>
-
-Jika Sudah Seperti Gambar di Atas, Artinya Sudah jalan dan Tunggu Sampai 1 - 2 Jam Untuk Mensinkronkan (Ngejar Block Yang Ada di Explorer) `JADI KUDU SABAR SIRR..`
-
-<p align="center">
-  <img height="auto" height="auto" src="https://user-images.githubusercontent.com/38981255/184388159-4b0ebd21-8b4e-4f28-a10f-03b1626db075.PNG">
-</p>
-
-Jika Sudah Seperti gambar di atas, Artilnya Sudah Selesai Sinkron, Silahkan Lanjut Next Step
-
-## 10. Start Node
-### Lakukan Ini Masih di TAB Baru
-```
-cd ~/inery-node/inery.setup/master.node/
-./start.sh
-```
-## 11. Menghubungkan Wallet dengan Dasboard Akun
-
-### Lakukan Ini Masih di TAB Baru
+## 6. Menghubungkan Wallet dengan Dasboard Akun
 
 ```
 cline wallet create -n namawallet -f file.txt
 ```
-namawalet ganti bang bebas
+**namawalet ganti sesuai nama akun yang di web testnet inery**
 
-file.txt berisi Password Wallet kalian (Kalian membutuhkan itu Jika Wallet kalian dalam Keadaan Lock)
+```
+nano file.txt
+```
+**salin dan simpan isi yang ada di dalam file.txt karna ini password wallet kalian**
+
 ```
 cline wallet import --private-key privatekey -n namawallet
 ```
-privatekey pake yang di web testnetnya
+**privatekey ganti pake yang di web testnetnya**
 
 ### Register Master Node :
 
 ```
 cline system regproducer namaakun publikey 0.0.0.0:9010
 ```
-namaakun ganti bang bebas & publikey pake yang dari web testnetnya
+**namaakun & publikey ganti pake yang dari web testnetnya**
 
 ```
 cline system makeprod approve namaakkun namaakun
 ```
-namaakun ganti samain kek yang tadi
+**namaakun ganti samain kek yang tadi**
 
-**Done** pendaftaran berhasil bisa cek disini: https://explorer.inery.io/
+**Done. pendaftaran berhasil bisa cek disini: https://explorer.inery.io/ atau pake ini** ```cline system listproducers```
 
-# Perintah Berguna 
+# Perintah Berguna (perintah ini hanya untuk nambah pengetahuan kalian)
 
 ## Check Saldo Wallet 
 ```
-cline get currency balance inery.token ACCOUNT_NAME
+cline get currency balance inery.token namaakun
 ```
+**namaakun ganti pake yang tadi dibuat**
+
+## Check List Screen
+```
+screen -ls
+```
+## Kembali ke Screen
+```
+screen -rd inery
+```
+
 ## Delete Wallet di Node
 ```
 cline wallet stop
