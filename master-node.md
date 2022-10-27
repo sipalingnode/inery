@@ -116,7 +116,7 @@ screen -S inery
 
 ### Note : Untuk melanjutkan perintah dibawah ini pastikan node kalian sinkron atau nunggu 1 hari setelah running node
 
-## 6. Menghubungkan Wallet dengan Dasboard Akun
+## 7. Menghubungkan Wallet dengan Dasboard Akun
 
 ```
 cline wallet create -n namawallet -f file.txt
