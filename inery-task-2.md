@@ -35,9 +35,9 @@ cline push action inery.token issue '["YourAccountName", "5000.0000 ARMYASC", "I
 **YourAccountName ganti pake nama akun yang di web inery**
 
 ```
-cline push action inery.token transfer '["YourAccountName", "jisoo", "1.0000 ARMYASC", "Here Is 1 ARMYASC for you bro "]' -p YourAccountName
+cline push action inery.token transfer '["YourAccountName", "inery", "1.0000 ARMYASC", "Here Is 1 ARMYASC for you bro "]' -p YourAccountName
 cline push action inery.token transfer '["YourAccountName", "alfonova", "1.0000 ARMYASC", "Here Is 1 ARMYASC for you bro "]' -p YourAccountName
-cline push action inery.token transfer '["YourAccountName", "dexa", "1.0000 ARMYASC", "Here Is 1 ARMYASC for you bro "]' -p YourAccountName
+cline push action inery.token transfer '["YourAccountName", "armytestnet", "1.0000 ARMYASC", "Here Is 1 ARMYASC for you bro "]' -p YourAccountName
 cline push action inery.token transfer '["YourAccountName", "jambul.inery", "1.0000 ARMYASC", "Here Is 1 ARMYASC for you bro "]' -p YourAccountName
 cline push action inery.token transfer '["YourAccountName", "riandwiyandi", "1.0000 ARMYASC", "Here Is 1 ARMYASC for you bro "]' -p YourAccountName
 cline push action inery.token transfer '["YourAccountName", "armz", "1.0000 ARMYASC", "Here Is 1 ARMYASC for you bro "]' -p YourAccountName
