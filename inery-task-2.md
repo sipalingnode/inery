@@ -3,7 +3,7 @@
 ```
 cline wallet unlock -n YourWalletName
 ```
-**Yourwalletname ganti pake nama wallet yang udah dibuat tadi**
+**Yourwalletname ganti pake nama wallet yang udah dibuat tadi, Kemudian masukkan password yang udah disimpan**
 
 ```
 YourAccountName on below with youraccountname
