@@ -117,7 +117,7 @@ cline set contract nama-akun ./inrcrud
 ## Create, Read, Update, Destroy Contract
 ***nama-akun diganti dengan nama akun yang di web inery***
 ```
-cline push action nama-akun create '[1, "AIRDROPASC", "Salam Dari ASC"]' -p nama-akun --json
+cline push action nama-akun create '[1, "asc", "salam dari asc"]' -p nama-akun --json
 ```
 
 ```
@@ -125,7 +125,7 @@ cline push action nama-akun read [1] -p nama-akun --json
 ```
 
 ```
-cline push action nama-akun update '[ 1,  "Salam Dari ASC"]' -p nama-akun --json
+cline push action nama-akun update '[ 1,  "salam dari asc"]' -p nama-akun --json
 ```
 
 ```
