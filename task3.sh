@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo -e "\033[0;35m"
+echo -e "\025[0;35m"
 echo  "    ███████████████   ██    ██  ████████   ████████                                   ";
 echo  "    ██           ██   ██    ██     ██      ██    ██                                   ";
 echo  "    ██           ██   ██    ██     ██      ██    ██                                   ";
@@ -14,11 +14,10 @@ echo  "   ████         ████  ██████  █████
 echo -e "\e[0m"
 echo "====================================================================================" 
 
-echo -e '\e[36mUpdate :\e[39m' Inery Task 3
-echo -e '\e[36mAuthor :\e[39m' Auto Sultan
-echo -e '\e[36mTelegram Group :\e[39m' @autosultan_group
-echo -e '\e[36mTelegram Channel :\e[39m' @airdropasc
-echo -e '\e[36mYoutube :\e[39m' auto sultan
+echo -e '\e[36mUpdate :\e[35m' Inery Task 3
+echo -e '\e[36mTelegram Group :\e[35m' @autosultan_group
+echo -e '\e[36mTelegram Channel :\e[35m' @airdropasc
+echo -e '\e[36mYoutube :\e[35m' auto sultan
 echo "===================================================================================="
 
 sleep 2
