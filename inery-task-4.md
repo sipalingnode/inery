@@ -33,7 +33,11 @@ nano .env
 | YOUR_NODE_URL  | IP VPS kalian |
 
 **Jika sudah langsung `CTRL+XY lalu enter` untuk save file nya**
-## Check Ouput (jika berhasil tampilan akan seperti dibawah ini)
+## Check Ouput
+```
+npm run rpc-example
+```
+**jika berhasil tampilan akan seperti dibawah ini**
 ```
 {
   transaction_id: '8a58f296e11f2xxxxxxxxxxxx3f639658f9a0dcca8cfa7194b57d946af5',
