@@ -1,3 +1,4 @@
+# INERY TASK 4
 ## Install NodeJS
 ```
 sudo apt-get remove nodejs
@@ -51,4 +52,4 @@ nano .env
 ```
 **Langsung ke web Inery Testnetnya Lalu Klik Finish di Task 4 Nya dan Tunggu Hasil Review**
 
-Thanks To > alteregogi
+Thanks for alteregogi
